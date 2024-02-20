@@ -37,8 +37,8 @@ const Navbar = () => {
         }
     </>
     return (
-        <div className=" p-10 lg:w-[1280px] lg:mx-auto mx-10">
-            <div className="navbar bg-[#FB88B4] rounded-full">
+        <div className=" py-10 md:px-10 px-2 lg:w-[1280px]  mx-auto">
+            <div className="navbar bg-[#FB88B4] rounded-lg">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,8 +49,8 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="flex items-center">
-                        <Link to='/'><img className="w-[50px] h-[50px] rounded-full mr-4" src="../../../../public/kids kingdom logo.jpeg" alt="" /></Link>
-                        <h1 className="text-white text-2xl font-bold"><span className="text-3xl">K</span>ids <span className="text-3xl">K</span>ingdom</h1>
+                        <Link to='/'><img className="w-[50px] h-[50px] rounded-lg mr-4" src="../../../../public/kids kingdom logo.jpeg" alt="" /></Link>
+                        <h1 className="text-white text-2xl font-bold ml-2"><span className="text-3xl">K</span>ids <span className="text-3xl">K</span>ingdom</h1>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -65,7 +65,7 @@ const Navbar = () => {
                             <h1 className="text-xl text-white mr-4">{user.displayName}</h1>
                             <img className="lg:w-[40px] lg:h-[40px] w-[30px] h-[30px] mr-2 rounded-full" src={user.photoURL} alt="" />
                         </> : <>
-                            <Link to='/register' className="btn rounded-full bg-white text-xl font-bold  text-[#523906]">Register</Link>
+                            <Link to='/register' className="btn  bg-white text-xl font-bold  text-black">Register</Link>
                         </>
                     }
 
