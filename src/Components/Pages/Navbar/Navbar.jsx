@@ -5,8 +5,8 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { RiLoginCircleLine } from "react-icons/ri";
 import { RiLogoutCircleLine } from "react-icons/ri";
-
-
+import { BsCart3 } from "react-icons/bs";
+import { MdAddShoppingCart } from "react-icons/md";
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
 
@@ -23,21 +23,21 @@ const Navbar = () => {
 
     const links = <>
         <NavLink to='/' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4' : 'text-white text-xl font-semibold mr-4')}>Home</NavLink>
-        <NavLink to='/addProduct' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4' : 'text-white text-xl font-semibold mr-4')}>Add Product</NavLink>
-        <NavLink to='/My Cart' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4' : 'text-white text-xl font-semibold mr-4')}>My Cart</NavLink>
+        <NavLink to='/addProduct' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4 flex flex-row items-center' : 'text-white text-xl font-semibold mr-4 flex flex-row items-center')}>Add Product<MdAddShoppingCart  /></NavLink>
+        <NavLink to='/My Cart' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4 flex flex-row items-center' : 'text-white text-xl font-semibold mr-4 flex flex-row items-center')}>My Cart<BsCart3 /></NavLink>
         {
             user ?
-                <><NavLink onClick={handleLogOut} className="text-white text-xl font-semibold mr-4 flex flex-row items-center">Logout<RiLogoutCircleLine className="ml-2"/></NavLink>
+                <><NavLink onClick={handleLogOut} className="text-white text-xl font-semibold mr-4 flex flex-row items-center">Logout<RiLogoutCircleLine /></NavLink>
 
                 </> :
                 <>
 
-                    <NavLink to='/login' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4 flex flex-row items-center' : 'text-white text-xl font-semibold mr-4 flex flex-row items-center ')}>Login<RiLoginCircleLine className="ml-2" /></NavLink>
+                    <NavLink to='/login' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4 flex flex-row items-center' : 'text-white text-xl font-semibold mr-4 flex flex-row items-center ')}>Login<RiLoginCircleLine  /></NavLink>
                 </>
         }
     </>
     return (
-        <div className=" py-10 md:px-10 px-2 lg:w-[1280px]  mx-auto">
+        <div className="py-10 md:px-10 px-2 lg:w-[1280px]  mx-auto">
             <div className="navbar bg-[#FB88B4] rounded-lg">
                 <div className="navbar-start">
                     <div className="dropdown">
