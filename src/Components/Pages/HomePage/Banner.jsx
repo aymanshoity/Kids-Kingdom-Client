@@ -2,7 +2,7 @@ import { Slide, Fade } from "react-awesome-reveal";
 
 const Banner = () => {
     return (
-        <div className="py-2 md:px-10 px-2 lg:w-[1280px]  mx-auto">
+        <div className="pt-2 pb-20 md:px-10 px-2 lg:w-[1280px]  mx-auto">
             <div className="hero min-h-screen  rounded-lg object-cover" style={{ backgroundImage: 'url(https://i.ibb.co/27x1JyS/Hand-drawn-abstract-background.jpg)' }}>
                 <div className="hero-content text-center  ">
                     <div className="max-w-md ">
