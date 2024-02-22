@@ -10,19 +10,19 @@ const ChooseUs = () => {
             <Slide>
                 <div className=" bg-[#f89ec1] py-5  rounded-xl grid grid-cols-1 lg:grid-cols-2  gap-4">
 
-                    <div className="flex flex-row items-center lg:w-[450px] w-[300px] mx-auto  bg-white p-2 rounded-lg ">
+                    <div className="flex flex-row items-center md:w-[450px] w-[300px] mx-auto  bg-white p-2 rounded-lg ">
                         <div>
-                            <GiTakeMyMoney className="lg:text-7xl mr-2"></GiTakeMyMoney>
+                            <GiTakeMyMoney className="lg:text-7xl text-5xl mr-2"></GiTakeMyMoney>
                         </div>
                         <div>
                             <h2 className="lg:text-2xl text-xl">Low Price</h2>
-                            <p >All our products, from laptops to smartphones, are offered at affordable prices for everyone</p>
+                            <p >All our products offer at affordable prices for everyone</p>
                         </div>
 
                     </div>
-                    <div className="flex items-center bg-white lg:w-[450px] w-[300px] mx-auto  p-2 rounded-lg ">
+                    <div className="flex items-center bg-white md:w-[450px] w-[300px] mx-auto  p-2 rounded-lg ">
                         <div>
-                            <TbTruckDelivery className="lg:text-7xl mr-2"></TbTruckDelivery>
+                            <TbTruckDelivery className="lg:text-7xl text-5xl mr-2"></TbTruckDelivery>
 
                         </div>
                         <div>
@@ -31,9 +31,9 @@ const ChooseUs = () => {
                         </div>
 
                     </div>
-                    <div className="flex items-center bg-white lg:w-[450px] w-[300px] mx-auto  p-2 rounded-lg">
+                    <div className="flex items-center bg-white md:w-[450px] w-[300px] mx-auto  p-2 rounded-lg">
                         <div>
-                            <RiCoupon3Line className="lg:text-7xl mr-2"></RiCoupon3Line>
+                            <RiCoupon3Line className="lg:text-7xl text-5xl mr-2"></RiCoupon3Line>
                         </div>
                         <div>
                             <h2 className="lg:text-2xl text-xl">5% cash back</h2>
@@ -41,9 +41,9 @@ const ChooseUs = () => {
                         </div>
 
                     </div>
-                    <div className="flex items-center bg-white lg:w-[450px] w-[300px] mx-auto  p-2 rounded-lg">
+                    <div className="flex items-center bg-white md:w-[450px] w-[300px] mx-auto  p-2 rounded-lg">
                         <div>
-                            <TbTruckReturn className="lg:text-7xl mr-2"></TbTruckReturn >
+                            <TbTruckReturn className="lg:text-7xl text-5xl mr-2"></TbTruckReturn >
                         </div>
                         <div>
                             <h2 className="lg:text-2xl text-xl">Easy Return</h2>
