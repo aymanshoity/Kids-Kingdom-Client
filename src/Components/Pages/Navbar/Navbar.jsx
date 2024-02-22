@@ -1,4 +1,4 @@
-// import { useContext } from "react";
+import { IoHomeOutline } from "react-icons/io5";
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -22,9 +22,9 @@ const Navbar = () => {
     }
 
     const links = <>
-        <NavLink to='/' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4' : 'text-white text-xl font-semibold mr-4')}>Home</NavLink>
+        <NavLink to='/' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4 flex flex-row items-center' : 'text-white text-xl font-semibold mr-4 flex flex-row items-center')}>Home<IoHomeOutline /></NavLink>
         <NavLink to='/addProduct' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4 flex flex-row items-center' : 'text-white text-xl font-semibold mr-4 flex flex-row items-center')}>Add Product<MdAddShoppingCart  /></NavLink>
-        <NavLink to='/My Cart' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4 flex flex-row items-center' : 'text-white text-xl font-semibold mr-4 flex flex-row items-center')}>My Cart<BsCart3 /></NavLink>
+        <NavLink to='/myCart' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4 flex flex-row items-center' : 'text-white text-xl font-semibold mr-4 flex flex-row items-center')}>My Cart<BsCart3 /></NavLink>
         {
             user ?
                 <><NavLink onClick={handleLogOut} className="text-white text-xl font-semibold mr-4 flex flex-row items-center">Logout<RiLogoutCircleLine /></NavLink>

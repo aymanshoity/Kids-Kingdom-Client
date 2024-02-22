@@ -1,11 +1,14 @@
+import Swal from "sweetalert2";
 import SharedHeadings from "../SharedPages/SharedHeadings";
+import UseAxiosPublic from "../../Hooks/UseAxiosPublic";
 
 
-const UpdateProduct = () => {
-
-    const handleUpdateProduct = e => {
+const AddProduct = () => {
+    const axiosPublic = UseAxiosPublic()
+    const handleAddProduct = (e) => {
         e.preventDefault()
         const form = e.target
+
         const brandName = form.brandName.value;
         const brandLogo = form.brandLogo.value;
         const productName = form.productName.value;
@@ -16,12 +19,34 @@ const UpdateProduct = () => {
         const productDetails = form.productDetails.value;
 
         const toy = { brandName, brandLogo, productName, productImage, productDetails, price, ratings, type };
+        Swal.fire({
+            title: "Do you want to add this Product?",
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: "Add",
+            denyButtonText: `Don't Add`
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                axiosPublic.post('/toys', toy)
+                    .then(res => {
+                        console.log(res.data)
+                        if (res.data.insertedId) {
+                            Swal.fire("Added!", "", "success");
+                        }
+                    })
+                
+            } else if (result.isDenied) {
+                Swal.fire("Changes are not saved", "", "info");
+            }
+        });
+
     }
     return (
         <div className="py-10 md:px-10 px-2 lg:w-[1280px]  mx-auto">
-            <SharedHeadings heading={'Update Product'}></SharedHeadings>
+            <SharedHeadings heading={'Add Product'}></SharedHeadings>
             <div className="card  w-full  shadow-2xl bg-base-100">
-                <form onSubmit={handleUpdateProduct} className="card-body">
+                <form onSubmit={handleAddProduct} className="card-body">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div className="form-control">
                             <label className="label">
@@ -84,4 +109,4 @@ const UpdateProduct = () => {
     );
 };
 
-export default UpdateProduct;
+export default AddProduct;

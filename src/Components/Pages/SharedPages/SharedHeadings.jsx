@@ -7,7 +7,7 @@ const SharedHeadings = ({heading}) => {
         <div className="w-3/12  mx-auto flex flex-col items-center">
             
             <motion.h1
-                    className="text-4xl mb-5  text-center text-black  border-b-4 border-black font-extrabold"
+                    className="text-4xl mb-5  text-center text-black  border-b-4 border-black font-bold"
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{

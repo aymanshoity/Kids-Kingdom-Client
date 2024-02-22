@@ -7,6 +7,9 @@ import SignUp from "../Components/Pages/Authentication/SignUp";
 import SingleBrand from "../Components/Pages/HomePage/SingleBrand";
 import UpdateProduct from "../Components/Pages/Update/UpdateProduct";
 import SingleProduct from "../Components/Pages/HomePage/SingleProduct";
+import MyCart from "../Components/Pages/MyCart/MyCart";
+import PrivateRoute from "./PrivateRoute";
+import AddProduct from "../Components/Pages/AddProduct/AddProduct";
 
 
 export const router=createBrowserRouter([
@@ -15,11 +18,13 @@ export const router=createBrowserRouter([
     errorElement:<ErrorPage></ErrorPage>,
     children:[
         {path:'/',element:<Home></Home>},
+        {path:'/addProduct',element:<AddProduct></AddProduct>},
         {path:'/login',element:<SignIn></SignIn>},
         {path:'/register',element:<SignUp></SignUp>},
         {path:'/update',element:<UpdateProduct></UpdateProduct>},
         {path:'/:brand/:id',element:<SingleProduct></SingleProduct>},
         {path:'/:brand',element:<SingleBrand></SingleBrand>},
+        {path:'/myCart',element:<PrivateRoute><MyCart></MyCart></PrivateRoute>},
     ]
     }
 ])
