@@ -18,7 +18,7 @@ export const router=createBrowserRouter([
     errorElement:<ErrorPage></ErrorPage>,
     children:[
         {path:'/',element:<Home></Home>},
-        {path:'/addProduct',element:<AddProduct></AddProduct>},
+        {path:'/addProduct',element:<PrivateRoute><AddProduct></AddProduct></PrivateRoute>},
         {path:'/login',element:<SignIn></SignIn>},
         {path:'/register',element:<SignUp></SignUp>},
         {path:':brand/update/:id',element:<PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>},

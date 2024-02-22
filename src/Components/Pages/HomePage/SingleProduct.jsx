@@ -13,7 +13,7 @@ const SingleProduct = () => {
     const navigate = useNavigate()
     const [product, setProduct] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/toys/${brand}/${id}`)
+        fetch(`https://kids-kingdom-server.vercel.app/toys/${brand}/${id}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)

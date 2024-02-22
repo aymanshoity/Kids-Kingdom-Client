@@ -11,7 +11,7 @@ const SingleBrand = () => {
     const [image, setImage] = useState()
     
     useEffect(()=>{
-        fetch(`http://localhost:5000/toys/${brand}`)
+        fetch(`https://kids-kingdom-server.vercel.app/toys/${brand}`)
         .then(res=>res.json())
         .then(data=>{
             console.log(data)

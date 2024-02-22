@@ -10,7 +10,7 @@ const MyCart = () => {
     const { user } = useContext(AuthContext)
     const [cartItem, setCartItem] = useState([])
     useEffect(() => {
-        // fetch(`http://localhost:5000/Cart/:${user.email}`)
+        // fetch(`https://kids-kingdom-server.vercel.app/Cart/:${user.email}`)
         // .then(res=>res.json())
         // .then(data=>{
         //     console.log(data)
