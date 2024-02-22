@@ -1,5 +1,6 @@
 import AllBrands from "../AllBrands";
 import Banner from "../Banner";
+import ChooseUs from "../ChooseUs";
 import Footer from "../Footer";
 import Newsletter from "../Newsletter";
 
@@ -9,6 +10,7 @@ const Home = () => {
         <div className="">
             <Banner></Banner>
             <AllBrands></AllBrands>
+            <ChooseUs></ChooseUs>
             <Newsletter></Newsletter>
             <Footer></Footer>
         </div>
