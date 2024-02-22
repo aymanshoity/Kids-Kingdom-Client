@@ -1,6 +1,7 @@
 import AboutUs from "../AboutUs";
 import AllBrands from "../AllBrands";
 import Banner from "../Banner";
+import Category from "../Category";
 import ChooseUs from "../ChooseUs";
 import ExtraSection from "../ExtraSection";
 import Footer from "../Footer";
@@ -14,6 +15,7 @@ const Home = () => {
             <Banner></Banner>
             <AboutUs></AboutUs>
             <AllBrands></AllBrands>
+            <Category></Category>
             <OfferSection></OfferSection>
             <ChooseUs></ChooseUs>
             <ExtraSection></ExtraSection>
