@@ -15,7 +15,7 @@ const OfferSection = () => {
                             <button className="btn">Shop now<FaArrowRight /></button>
                         </div>
                         <div className="flex flex-col justify-around text-center">
-                            <img className=" rounded-xl h-[400px]" src="../../../../public/Humpty-Dumpty.png" alt="" />
+                            <img className=" rounded-xl h-[400px]" src="../../../../Humpty-Dumpty.png" alt="" />
                         </div>
                     </div>
                 </Zoom>
@@ -29,7 +29,7 @@ const OfferSection = () => {
                                 <button className="btn">Shop now<FaArrowRight /></button>
                             </div>
                             <div>
-                                <img className="w-[200px] h-[200px] rounded-xl" src="../../../../public/RFL4.jpg" alt="" />
+                                <img className="w-[200px] h-[200px] rounded-xl" src="../../../../RFL4.jpg" alt="" />
                             </div>
                         </div>
                     </Zoom>
@@ -41,7 +41,7 @@ const OfferSection = () => {
                                 <button className="btn">Shop now<FaArrowRight /></button>
                             </div>
 
-                            <img className="w-[200px] h-[200px] rounded-xl" src="../../../../public/h8-img3.png" alt="" />
+                            <img className="w-[200px] h-[200px] rounded-xl" src="../../../../h8-img3.png" alt="" />
                         </div>
                     </Zoom>
 

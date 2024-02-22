@@ -1,4 +1,5 @@
 import { Zoom } from "react-awesome-reveal";
+import { FaArrowRight } from "react-icons/fa";
 
 
 const ExtraSection = () => {
@@ -9,10 +10,10 @@ const ExtraSection = () => {
                 <div className="rounded-xl bg-red-200 p-5 flex justify-between">
                     <div className="">
                         <h1 className="text-2xl font-semibold mb-5">Exclusive Memory Games</h1>
-                        <button className="btn">Shop now</button>
+                        <button className="btn">Shop now<FaArrowRight /></button>
                     </div>
                     <div>
-                        <img className="w-[200px] h-[200px] rounded-xl" src="../../../../public/Frank1.png" alt="" />
+                        <img className="w-[200px] h-[200px] rounded-xl" src="../../../../Frank1.png" alt="" />
                     </div>
                 </div>
             </Zoom>
@@ -20,10 +21,10 @@ const ExtraSection = () => {
                 <div className="rounded-xl bg-yellow-200 p-5 flex justify-between">
                     <div className="">
                         <h1 className="text-2xl font-semibold mb-5">Explore the Indoor Games</h1>
-                        <button className="btn">Shop now</button>
+                        <button className="btn">Shop now<FaArrowRight /></button>
                     </div>
                     <div>
-                        <img className="w-[200px] h-[200px] rounded-xl" src="../../../../public/RFL4.jpg" alt="" />
+                        <img className="w-[200px] h-[200px] rounded-xl" src="../../../../RFL4.jpg" alt="" />
                     </div>
                 </div>
             </Zoom>
@@ -31,10 +32,10 @@ const ExtraSection = () => {
                 <div className="rounded-xl bg-green-200 p-5 flex justify-between">
                     <div className="">
                         <h1 className="text-2xl font-semibold mb-5">Enjoyable Baby Rider</h1>
-                        <button className="btn">Shop now</button>
+                        <button className="btn">Shop now<FaArrowRight /></button>
                     </div>
                     <div>
-                        <img className="w-[200px] h-[200px] rounded-xl" src="../../../../public/Humpty-Dumpty.png" alt="" />
+                        <img className="w-[200px] h-[200px] rounded-xl" src="../../../../Humpty-Dumpty.png" alt="" />
                     </div>
                 </div>
             </Zoom>

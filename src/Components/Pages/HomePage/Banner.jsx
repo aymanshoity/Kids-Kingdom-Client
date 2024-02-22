@@ -10,7 +10,7 @@ const Banner = () => {
                         <Slide cascade damping={0.3} direction="up" >
                             <Fade cascade damping={0.5}>
                                 <div className="flex flex-col items-center">
-                                    <img src="../../../../public/kids kingdom logo.jpeg" alt="" className="rounded-full w-[200px] h-[200px]" />
+                                    <img src="../../../../kids kingdom logo.jpeg" alt="" className="rounded-full w-[200px] h-[200px]" />
                                 </div>
                                 <h1 className="mb-5 md:text-5xl text-3xl font-bold">Welcome to Kids Kingdom</h1>
                                 <p className="mb-5">Discover Endless Joy: Unleash the Magic of Play with Our Enchanting Toy Wonderland!</p>
