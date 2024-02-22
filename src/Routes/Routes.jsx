@@ -6,6 +6,7 @@ import SignIn from "../Components/Pages/Authentication/SignIn";
 import SignUp from "../Components/Pages/Authentication/SignUp";
 import SingleBrand from "../Components/Pages/HomePage/SingleBrand";
 import UpdateProduct from "../Components/Pages/Update/UpdateProduct";
+import SingleProduct from "../Components/Pages/HomePage/SingleProduct";
 
 
 export const router=createBrowserRouter([
@@ -17,6 +18,7 @@ export const router=createBrowserRouter([
         {path:'/login',element:<SignIn></SignIn>},
         {path:'/register',element:<SignUp></SignUp>},
         {path:'/update',element:<UpdateProduct></UpdateProduct>},
+        {path:'/:brand/:id',element:<SingleProduct></SingleProduct>},
         {path:'/:brand',element:<SingleBrand></SingleBrand>},
     ]
     }

@@ -27,7 +27,7 @@ const SingleBrand = () => {
             <SharedHeadings heading={`All  Products`}></SharedHeadings>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {
-                products.map(toy=><SingleBrandDetails key={toy._id} toy={toy}></SingleBrandDetails>)
+                products.map(toy=><SingleBrandDetails brand={brand} key={toy._id} toy={toy}></SingleBrandDetails>)
             }
             </div>
 
