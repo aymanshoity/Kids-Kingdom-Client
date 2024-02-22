@@ -1,5 +1,5 @@
 import { IoHomeOutline } from "react-icons/io5";
-import { useContext } from "react";
+import { useContext,  useEffect,  useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
@@ -7,9 +7,11 @@ import { RiLoginCircleLine } from "react-icons/ri";
 import { RiLogoutCircleLine } from "react-icons/ri";
 import { BsCart3 } from "react-icons/bs";
 import { MdAddShoppingCart } from "react-icons/md";
-const Navbar = () => {
-    const { user, logOut } = useContext(AuthContext)
 
+const Navbar = () => {
+    
+    const { user, logOut } = useContext(AuthContext)
+    
     const handleLogOut = () => {
         logOut()
             .then(() => {
@@ -35,6 +37,7 @@ const Navbar = () => {
                     <NavLink to='/login' className={({ isActive }) => (isActive ? 'text-black text-xl font-semibold mr-4 flex flex-row items-center' : 'text-white text-xl font-semibold mr-4 flex flex-row items-center ')}>Login<RiLoginCircleLine  /></NavLink>
                 </>
         }
+        {/* <button onClick={()=>handleToggleTheme()} className="btn bg-white">Toggle theme</button> */}
     </>
     return (
         <div className="py-10 md:px-10 px-2 lg:w-[1280px]  mx-auto">
@@ -46,6 +49,7 @@ const Navbar = () => {
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#FB88B4] rounded-box w-52">
                             {links}
+                            
                         </ul>
                     </div>
                     <div className="flex items-center">

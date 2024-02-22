@@ -8,7 +8,7 @@ const Banner = () => {
                     <div className="max-w-md ">
 
                         <Slide cascade damping={0.3} direction="up" >
-                            <Fade cascade damping={0.5}>
+                            <Fade cascade damping={0.2}>
                                 <div className="flex flex-col items-center">
                                     <img src="../../../../kids kingdom logo.jpeg" alt="" className="rounded-full w-[200px] h-[200px]" />
                                 </div>

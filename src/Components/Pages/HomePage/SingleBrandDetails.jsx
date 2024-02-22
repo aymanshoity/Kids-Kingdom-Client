@@ -13,7 +13,7 @@ const SingleBrandDetails = ({ toy,brand }) => {
                 <p className="font-semibold">Ratings:{ratings}</p>
                 <p className="font-semibold">Price:{price}  Tk.</p>
                 <div className="card-actions justify-start">
-                    <Link to='/update'><button className="btn bg-[#B7C9F2]">Update<GrUpdate/></button></Link>
+                    <Link to={`/${brand}/update/${_id}`}><button className="btn bg-[#B7C9F2]">Update<GrUpdate/></button></Link>
                     <Link  to={`/${brand}/${_id}`}><button  className="btn bg-[#B7C9F2]">Details<BiDetail /></button></Link>
                     
                 </div>

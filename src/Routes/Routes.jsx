@@ -21,7 +21,7 @@ export const router=createBrowserRouter([
         {path:'/addProduct',element:<AddProduct></AddProduct>},
         {path:'/login',element:<SignIn></SignIn>},
         {path:'/register',element:<SignUp></SignUp>},
-        {path:'/update',element:<UpdateProduct></UpdateProduct>},
+        {path:':brand/update/:id',element:<PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>},
         {path:'/:brand/:id',element:<SingleProduct></SingleProduct>},
         {path:'/:brand',element:<SingleBrand></SingleBrand>},
         {path:'/myCart',element:<PrivateRoute><MyCart></MyCart></PrivateRoute>},
