@@ -1,4 +1,4 @@
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 import SharedHeadings from "../SharedPages/SharedHeadings";
 
 
